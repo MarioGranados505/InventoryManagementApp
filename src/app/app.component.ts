@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { Product } from "./product.model";
 
 @Component({
@@ -7,28 +7,34 @@ import { Product } from "./product.model";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  product: Product[];
+  products: Product[];
+
+  productWasSelected(product: Product): void {
+    console.log('Product clicked: ', product);
+  }
+
   constructor(){
-    this.product = [
+    
+    this.products = [
 
       new Product(
         "NICEHAT",
         "A Nice Black Hat",
-        "/resources/imagens/products/black-hat.jpg",
+        "/assets/imagens/products/black-hat.jpg",
         ["Men", "Accesories", "Hats"],
         29.99
       ),
       new Product(
-        "HEATOJACKET",
+        "NEATOJACKET",
         "Blue Jacket",
-        "/resources/imagens/products/black-shoes.jpg",
+        "/assets/imagens/products/blue-jacket.jpg",
         ["Women", "Apparel", "Jackets & Vests"],
-        29.99
+        238.99
       ),
       new Product(
         "MYSHOES",
         "Black Running Shoes",
-        "/resources/imagens/products/black-hat.jpg",
+        "/assets/imagens/products/black-shoes.jpg",
         ["Men", "Shoes", "Running Shoes"],
         29.99
       ) 
