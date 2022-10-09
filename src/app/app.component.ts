@@ -20,21 +20,21 @@ export class AppComponent {
       new Product(
         "NICEHAT",
         "A Nice Black Hat",
-        "/assets/imagens/products/black-hat.jpg",
+        "/assets/images/products/black-hat.jpg",
         ["Men", "Accesories", "Hats"],
         29.99
       ),
       new Product(
         "NEATOJACKET",
         "Blue Jacket",
-        "/assets/imagens/products/blue-jacket.jpg",
+        "/assets/images/products/blue-jacket.jpg",
         ["Women", "Apparel", "Jackets & Vests"],
         238.99
       ),
       new Product(
         "MYSHOES",
         "Black Running Shoes",
-        "/assets/imagens/products/black-shoes.jpg",
+        "/assets/images/products/black-shoes.jpg",
         ["Men", "Shoes", "Running Shoes"],
         29.99
       ) 
